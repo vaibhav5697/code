@@ -49,7 +49,7 @@ git clone https://github.com/iamtejasmane/aws-three-tier-web-app.git
 Now we will be building out the VPC networking components as well as security groups that will add a layer of protection around our EC2 instances, Aurora databases, and Elastic Load Balancers.
 
 - Create an isolated network with the following components:
-  - VPC
+  - VPC/
   - Subnets
   - Route Tables
   - Internet Gateway
