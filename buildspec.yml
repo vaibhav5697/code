@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - cd application-code/web-tier
+      - npm install
+  build:
+    commands:
+      - echo "build is getting ready"
+      - npm run build
+artifacts:
+  base-directory: application-code/web-tier
+  files:
+    - build/**/*
+    - ../../appspec.yml
+    - ../../scripts/*
